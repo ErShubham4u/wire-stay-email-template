@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wire Stay Listing Reminder</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      .outer-table {
+        width: 100%;
+        padding: 20px 0;
+        background-color: #f7f7f7;
+      }
+
+      .main-container {
+        width: 600px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        background-color: #0056b3;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .header img {
+        max-width: 150px;
+        height: auto;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .content h2 {
+        color: #0056b3;
+        margin-top: 0;
+      }
+
+      .list-table {
+        width: 100%;
+        margin: 20px 0;
+      }
+
+      .list-item {
+        padding: 5px 0;
+      }
+
+      .list-item-table {
+        width: 100%;
+      }
+
+      .list-item-table td.icon {
+        width: 40px;
+        padding-right: 10px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .list-item-table td {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        vertical-align: middle;
+      }
+
+      .list-item-table img {
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+
+      .cta-button {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .cta-button a {
+        background-color: #ff6b00;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+      }
+
+      .footer {
+        background-color: #f1f1f1;
+        font-size: 12px;
+        padding: 15px;
+        color: #666;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 640px) {
+        .main-container {
+          width: 90% !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table class="outer-table">
+      <tr>
+        <td align="center">
+          <!-- Main Container -->
+          <table class="main-container">
+            <!-- Header -->
+            <tr>
+              <td class="header">
+                <img src="logo.svg" alt="Wire Stay Logo" />
+              </td>
+            </tr>
+
+            <!-- Content -->
+            <tr>
+              <td class="content">
+                <h2>Complete Your Listing to Start Getting Bookings</h2>
+                <p>Dear Prathmesh,</p>
+                <p>Your listing is almost ready to go live!</p>
+                <p><strong>PP HOTEL</strong><br />Vadodara, Gujarat</p>
+                <p>
+                  However, we noticed some important sections are missing or
+                  incomplete:
+                </p>
+
+                <!-- List Section -->
+                <table class="list-table">
+                  <!-- Guest & Property Info -->
+                  <tr class="list-item">
+                    <td>
+                      <table class="list-item-table">
+                        <tr>
+                          <td class="icon">
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/512/747/747376.png"
+                              alt="Guest Info"
+                            />
+                          </td>
+                          <td>
+                            <strong>Guest & Property Information:</strong>
+                            Details like beds and bathrooms help guests
+                            understand if your space suits their needs.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- Amenities -->
+                  <tr class="list-item">
+                    <td>
+                      <table class="list-item-table">
+                        <tr>
+                          <td class="icon">
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+                              alt="Amenities"
+                            />
+                          </td>
+                          <td>
+                            <strong>Amenities:</strong> Amenities increase
+                            visibility in searches and improve guest experience.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- Listing Price -->
+                  <tr class="list-item">
+                    <td>
+                      <table class="list-item-table">
+                        <tr>
+                          <td class="icon">
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/512/1170/1170576.png"
+                              alt="Listing Price"
+                            />
+                          </td>
+                          <td>
+                            <strong>Listing Price:</strong> Pricing is required
+                            to make your listing bookable.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- Booking Type -->
+                  <tr class="list-item">
+                    <td>
+                      <table class="list-item-table">
+                        <tr>
+                          <td class="icon">
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png"
+                              alt="Booking Type"
+                            />
+                          </td>
+                          <td>
+                            <strong>Booking Type:</strong> Let guests know if
+                            they can book instantly or need approval.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- Cancellation Policy -->
+                  <tr class="list-item">
+                    <td>
+                      <table class="list-item-table">
+                        <tr>
+                          <td class="icon">
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png"
+                              alt="Cancellation Policy"
+                            />
+                          </td>
+                          <td>
+                            <strong>Cancellation Policy:</strong> Helps set
+                            clear expectations and avoid confusion.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- Property Rules -->
+                  <tr class="list-item">
+                    <td>
+                      <table class="list-item-table">
+                        <tr>
+                          <td class="icon">
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/512/2910/2910763.png"
+                              alt="Property Rules"
+                            />
+                          </td>
+                          <td>
+                            <strong>Property Rules:</strong> Important to
+                            communicate what's allowed and what's not.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- Check-in / Check-out -->
+                  <tr class="list-item">
+                    <td>
+                      <table class="list-item-table">
+                        <tr>
+                          <td class="icon">
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/512/2921/2921220.png"
+                              alt="Check-in / Check-out Time"
+                            />
+                          </td>
+                          <td>
+                            <strong>Check-in / Check-out Time:</strong> Guests
+                            need to know when they can arrive and leave your
+                            property.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- CTA Button -->
+                <div class="cta-button">
+                  <a href="https://wirestay.com/">Update Your Listing Now</a>
+                </div>
+
+                <p>Best regards,<br />The Wire Stay Team</p>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td class="footer">
+                &copy; 2025 Wire Stay. All rights reserved.<br />
+                123 Street Name, City, Country
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
